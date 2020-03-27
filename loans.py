@@ -1,3 +1,4 @@
+#!/usr/bin/python
 def car_loan(principal, apr, num_months,as_str=False):
     rate=apr/100.0/12
     if rate > 0:
@@ -15,7 +16,7 @@ def car_loan(principal, apr, num_months,as_str=False):
   Monthly Payment = $%0.2f
   Total Payments = $%0.0f
   Total Interest Paid = $%0.0f
-  ''' %(principal,apr,num_months,monthly_payment,total_payments,total_interest))
+  ''' %(principal,apr,num_months,monthly_payment,total_payments,total_interest)
     else:
         result = (monthly_payment,total_payments,total_interest)
     return result
