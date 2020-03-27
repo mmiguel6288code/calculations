@@ -1,4 +1,11 @@
 #!/usr/bin/python
+
+try:
+    input = raw_input
+except NameError:
+    pass
+
+
 def car_loan(principal, apr, num_months,as_str=False):
     rate=apr/100.0/12
     if rate > 0:
